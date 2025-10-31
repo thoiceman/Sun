@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["src", "docusaurus.config.ts", "sidebars.ts", "docs"]
+}

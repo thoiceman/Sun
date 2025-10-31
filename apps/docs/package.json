@@ -1,0 +1,26 @@
+{
+  "name": "docs",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "lint": "eslint 'src/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2",
+    "@babel/preset-react": "^7.24.1"
+  }
+  ,
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ]
+}
