@@ -1,0 +1,127 @@
+---
+id: antd-button
+slug: /components/antd-button
+title: AntdButton 按钮（二次封装）
+description: 基于 Ant Design Button 的二次封装，保留原功能并扩展公司样式与增强特性。
+---
+
+import { AntdButton } from '@sun/ui';
+import { PlusOutlined, LoadingOutlined } from '@ant-design/icons';
+
+## 组件简介
+
+`AntdButton` 基于 Ant Design 的 `Button` 进行二次封装：
+
+- 保留 antd Button 的全部基础属性（`type`、`size`、`disabled`、`loading` 等）
+- 统一公司设计样式（圆角、hover、focus 可访问性样式），与品牌主色一致
+- 扩展能力：内置 loading 管理、支持自定义图标位置、提供防重复点击机制
+
+## 基础用法
+
+```tsx
+<AntdButton type="primary">主按钮</AntdButton>
+<AntdButton>默认按钮</AntdButton>
+<AntdButton type="dashed">虚线按钮</AntdButton>
+<AntdButton type="link">链接按钮</AntdButton>
+<AntdButton type="text">文本按钮</AntdButton>
+```
+
+<div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+  <AntdButton type="primary">主按钮</AntdButton>
+  <AntdButton>默认按钮</AntdButton>
+  <AntdButton type="dashed">虚线按钮</AntdButton>
+  <AntdButton type="link">链接按钮</AntdButton>
+  <AntdButton type="text">文本按钮</AntdButton>
+  <AntdButton disabled>禁用按钮</AntdButton>
+  <AntdButton loading>显式 loading</AntdButton>
+  <AntdButton icon={<PlusOutlined />}>带图标</AntdButton>
+</div>
+
+## 尺寸
+
+```tsx
+<AntdButton size="small">Small</AntdButton>
+<AntdButton size="middle">Middle</AntdButton>
+<AntdButton size="large">Large</AntdButton>
+```
+
+<div style={{ display: 'flex', gap: 12 }}>
+  <AntdButton size="small">Small</AntdButton>
+  <AntdButton size="middle">Middle</AntdButton>
+  <AntdButton size="large">Large</AntdButton>
+</div>
+
+## 内置 loading 管理（autoLoading）
+
+当 `onClick` 返回 `Promise` 且未显式传入 `loading` 时，组件会自动管理 loading 状态：
+
+```tsx
+<AntdButton
+  type="primary"
+  autoLoading
+  onClick={async () => {
+    await new Promise((r) => setTimeout(r, 1200));
+  }}
+>
+  异步操作（自动 loading）
+</AntdButton>
+```
+
+<AntdButton
+  type="primary"
+  autoLoading
+  onClick={async () => {
+    await new Promise((r) => setTimeout(r, 1200));
+  }}
+>
+  异步操作（自动 loading）
+</AntdButton>
+
+## 图标位置（iconPosition）
+
+可通过 `iconPosition` 控制图标渲染在文本前或后：
+
+```tsx
+<AntdButton icon={<PlusOutlined />} iconPosition="start">图标在前</AntdButton>
+<AntdButton icon={<PlusOutlined />} iconPosition="end">图标在后</AntdButton>
+```
+
+<div style={{ display: 'flex', gap: 12 }}>
+  <AntdButton icon={<PlusOutlined />} iconPosition="start">图标在前</AntdButton>
+  <AntdButton icon={<PlusOutlined />} iconPosition="end">图标在后</AntdButton>
+</div>
+
+## 防重复点击（preventDoubleClick）
+
+启用后，在设定的冷却时间内忽略后续点击：
+
+```tsx
+<AntdButton
+  type="primary"
+  preventDoubleClick
+  preventMs={800}
+  onClick={() => console.log('只会触发一次，后续点击在冷却期内忽略')}
+>
+  防重复点击（800ms）
+</AntdButton>
+```
+
+<AntdButton
+  type="primary"
+  preventDoubleClick
+  preventMs={800}
+  onClick={() => console.log('只会触发一次，后续点击在冷却期内忽略')}
+>
+  防重复点击（800ms）
+</AntdButton>
+
+## API（兼容 antd Button 并扩展）
+
+- 兼容：`ButtonProps` 中所有属性（`type`、`size`、`disabled`、`loading`、`icon` 等）
+- 扩展：
+  - `autoLoading?: boolean` 当 `onClick` 返回 `Promise` 且未显式传入 `loading` 时自动管理 loading
+  - `iconPosition?: 'start' | 'end'` 控制图标位置，默认 `start`
+  - `preventDoubleClick?: boolean` 开启防重复点击
+  - `preventMs?: number` 冷却时间（毫秒），默认 `600`
+
+> 组件遵循公司统一样式规范，品牌主色受全局 antd `ConfigProvider` 管理，Docs 已统一为 `#006fee`。

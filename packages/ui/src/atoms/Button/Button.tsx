@@ -49,7 +49,7 @@ const Base = styled.button<{ $variant: string; $size: keyof typeof sizes; $fullW
       color: var(--color-primary);
       border-color: var(--color-primary);
       &:hover {
-        background-color: rgba(0, 111, 238, 0.08);
+        background-color: color-mix(in srgb, var(--color-primary) 8%, transparent);
       }
     `}
   ${(p) =>
@@ -58,7 +58,7 @@ const Base = styled.button<{ $variant: string; $size: keyof typeof sizes; $fullW
       background: transparent;
       color: var(--color-text);
       &:hover {
-        background-color: rgba(17, 24, 39, 0.06);
+        background-color: color-mix(in srgb, var(--color-text) 6%, transparent);
       }
     `}
 `;

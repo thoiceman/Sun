@@ -1,0 +1,28 @@
+{
+  "id": "components/antd-button",
+  "title": "AntdButton 按钮（二次封装）",
+  "description": "基于 Ant Design Button 的二次封装，保留原功能并扩展公司样式与增强特性。",
+  "source": "@site/docs/components/antd-button.mdx",
+  "sourceDirName": "components",
+  "slug": "/components/antd-button",
+  "permalink": "/docs/components/antd-button",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "antd-button",
+    "slug": "/components/antd-button",
+    "title": "AntdButton 按钮（二次封装）",
+    "description": "基于 Ant Design Button 的二次封装，保留原功能并扩展公司样式与增强特性。"
+  },
+  "sidebar": "components",
+  "previous": {
+    "title": "Button 按钮",
+    "permalink": "/docs/components/button"
+  },
+  "next": {
+    "title": "BooleanTrigger 状态触发器",
+    "permalink": "/docs/components/boolean-trigger"
+  }
+}

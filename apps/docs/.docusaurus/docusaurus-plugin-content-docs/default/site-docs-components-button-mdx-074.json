@@ -20,5 +20,9 @@
   "previous": {
     "title": "概览",
     "permalink": "/docs/"
+  },
+  "next": {
+    "title": "AntdButton 按钮（二次封装）",
+    "permalink": "/docs/components/antd-button"
   }
 }

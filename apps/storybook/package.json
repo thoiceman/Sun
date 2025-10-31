@@ -26,6 +26,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@sun/ui": "0.1.0"
+    "@sun/ui": "0.1.0",
+    "antd": "^5.13.0",
+    "@ant-design/icons": "^5.2.6"
   }
 }

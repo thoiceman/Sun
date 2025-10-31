@@ -4,7 +4,7 @@ export default {
     {
       type: 'category',
       label: '组件',
-      items: ['components/button'],
+      items: ['components/button', 'components/antd-button', 'components/boolean-trigger'],
     },
   ],
 };

@@ -42,22 +42,30 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/docs-51e": {
+  "/docs-88f": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-1ec": {
+  "/docs-a54": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-a76": {
+  "/docs-1c1": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/-6d8": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-f-84-3be"
+  },
+  "/docs/components/antd-button-56e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-components-antd-button-2-d-5-f1b"
+  },
+  "/docs/components/boolean-trigger-575": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-components-boolean-triggera-1-a-90f"
   },
   "/docs/components/button-bb1": {
     "__comp": "__comp---theme-doc-item-178-a40",

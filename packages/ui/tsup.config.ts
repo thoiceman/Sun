@@ -4,6 +4,7 @@ export default defineConfig({
   entry: {
     index: 'src/index.ts',
     Button: 'src/atoms/Button/index.ts',
+    AntdButton: 'src/antd/Button/index.ts',
   },
   format: ['cjs', 'esm'],
   dts: true,

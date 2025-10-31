@@ -11,6 +11,16 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "components/antd-button",
+              "path": "/docs/components/antd-button",
+              "sidebar": "components"
+            },
+            {
+              "id": "components/boolean-trigger",
+              "path": "/docs/components/boolean-trigger",
+              "sidebar": "components"
+            },
+            {
               "id": "components/button",
               "path": "/docs/components/button",
               "sidebar": "components"

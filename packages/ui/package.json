@@ -7,7 +7,10 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "sideEffects": false,
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup --config tsup.config.ts",
     "dev": "tsup --config tsup.config.ts --watch",
@@ -15,24 +18,30 @@
     "test": "jest --coverage"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "@ant-design/icons": "^5.2.6",
     "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0"
+    "@emotion/styled": "^11.11.0",
+    "antd": "^5.13.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "tsup": "^7.3.0",
-    "typescript": "^5.4.2",
-    "jest": "^29.7.0",
+    "@ant-design/icons": "^5.2.6",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^14.2.1",
     "@types/jest": "^29.5.12",
+    "@types/react": "^18.3.26",
+    "@types/react-dom": "^18.3.7",
+    "antd": "^5.13.0",
+    "babel-jest": "^29.7.0",
+    "babel-plugin-import": "^1.13.8",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "@testing-library/react": "^14.2.1",
-    "@testing-library/jest-dom": "^6.4.5",
-    "jest-environment-jsdom": "^29.7.0",
-    "identity-obj-proxy": "^3.0.0",
-    "babel-jest": "^29.7.0",
-    "babel-plugin-import": "^1.13.8"
+    "tsup": "^7.3.0",
+    "typescript": "^5.4.2"
   },
   "exports": {
     ".": {
@@ -44,6 +53,11 @@
       "types": "./dist/Button.d.ts",
       "import": "./dist/Button.mjs",
       "require": "./dist/Button.js"
+    },
+    "./AntdButton": {
+      "types": "./dist/AntdButton.d.ts",
+      "import": "./dist/AntdButton.mjs",
+      "require": "./dist/AntdButton.js"
     },
     "./index.css": "./dist/index.css"
   },

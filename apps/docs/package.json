@@ -12,7 +12,9 @@
     "@docusaurus/core": "^3.0.0",
     "@docusaurus/preset-classic": "^3.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "antd": "^5.13.0",
+    "@ant-design/icons": "^5.2.6"
   },
   "devDependencies": {
     "typescript": "^5.4.2",

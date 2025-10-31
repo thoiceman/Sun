@@ -1,0 +1,127 @@
+---
+id: boolean-trigger
+slug: /components/boolean-trigger
+title: BooleanTrigger 状态触发器
+description: 通过触发元素控制类 Modal 组件的显示与行为，兼容 antd Modal/Drawer 等并支持 Promise 结果处理与懒加载。
+---
+
+import { BooleanTrigger, AntdButton } from '@sun/ui';
+import { Button, Modal, Drawer } from 'antd';
+
+## 组件简介
+
+`BooleanTrigger` 是一个通用触发器组件，约定接收两个子元素：
+
+- 第一个为触发元素（如 `Button`），用于触发显示；
+- 第二个为“类 Modal”元素（如 `Modal`/`Drawer`），由触发器控制其显示属性与确认/取消事件。
+
+适配点：
+- `booleanPropName`: 控制显示的布尔属性名。antd v5 `Modal/Drawer` 使用 `open`，历史版本为 `visible`。
+- `onOkName`/`onCancelName`: 映射确认/取消事件名，默认为 `onOk` 与 `onCancel`。
+- 事件返回值约定：
+  - 返回 `false` 表示失败或拒绝（不关闭）；
+  - 返回 `Promise` 时会等待其完成后再关闭（成功 resolve 关闭，reject 保持打开）。
+
+## 基础用法（与 antd Modal 配合）
+
+```tsx
+<BooleanTrigger booleanPropName="open">
+  <Button type="primary">打开对话框</Button>
+  <Modal title="示例对话框">Hello Modal</Modal>
+  {/* 默认映射 onOk/onCancel，执行后自动关闭 */}
+</BooleanTrigger>
+```
+
+<BooleanTrigger booleanPropName="open">
+  <Button type="primary">打开对话框</Button>
+  <Modal title="示例对话框">Hello Modal</Modal>
+</BooleanTrigger>
+
+## 自定义事件（Promise 与阻止关闭）
+
+```tsx
+<BooleanTrigger booleanPropName="open">
+  <AntdButton type="primary">打开（带自定义事件）</AntdButton>
+  <Modal
+    title="自定义事件"
+    onOk={() => new Promise((resolve) => setTimeout(resolve, 1000))}
+    onCancel={() => false /* 返回 false 阻止关闭 */}
+  >
+    点击确定后 1s 自动关闭；取消会被阻止关闭。
+  </Modal>
+  {/* onOk 返回 Promise 成功后关闭；onCancel 返回 false 不关闭 */}
+</BooleanTrigger>
+```
+
+<BooleanTrigger booleanPropName="open">
+  <AntdButton type="primary">打开（带自定义事件）</AntdButton>
+  <Modal
+    title="自定义事件"
+    onOk={() => new Promise((resolve) => setTimeout(resolve, 1000))}
+    onCancel={() => false}
+  >
+    点击确定后 1s 自动关闭；取消会被阻止关闭。
+  </Modal>
+</BooleanTrigger>
+
+## 与 Drawer 搭配
+
+```tsx
+<BooleanTrigger booleanPropName="open">
+  <Button>打开抽屉</Button>
+  <Drawer title="示例抽屉">Drawer 内容</Drawer>
+</BooleanTrigger>
+```
+
+<BooleanTrigger booleanPropName="open">
+  <Button>打开抽屉</Button>
+  <Drawer title="示例抽屉">Drawer 内容</Drawer>
+</BooleanTrigger>
+
+## 渲染与销毁策略
+
+- `renderMode`：渲染时机，`lazy`（默认）在首次显示时创建；`default` 初始化即创建。
+- `destroyOnClose`：关闭时是否销毁元素，默认 `false`。配合 `renderMode` 可降低首屏开销。
+
+```tsx
+<BooleanTrigger booleanPropName="open" renderMode="default" destroyOnClose>
+  <Button type="dashed">初始化创建，关闭时销毁</Button>
+  <Modal title="销毁策略示例">内容</Modal>
+</BooleanTrigger>
+```
+
+<BooleanTrigger booleanPropName="open" renderMode="default" destroyOnClose>
+  <Button type="dashed">初始化创建，关闭时销毁</Button>
+  <Modal title="销毁策略示例">内容</Modal>
+</BooleanTrigger>
+
+## API
+
+```ts
+interface BooleanTriggerProps {
+  /** 确认事件名称（默认 'onOk'） */
+  onOkName?: string;
+  /** 取消事件名称（默认 'onCancel'） */
+  onCancelName?: string;
+  /** 触发元素的事件名称（默认 'onClick'） */
+  actionName?: string;
+  /** 控制显示的布尔属性名（默认 'visible'，antd v5 请使用 'open'） */
+  booleanPropName?: string;
+  /** 关闭时是否销毁元素（默认 false） */
+  destroyOnClose?: boolean;
+  /** 渲染时机：'default' | 'lazy'（默认 'lazy'） */
+  renderMode?: 'default' | 'lazy';
+  /** 必须包含两个子元素：触发元素与类 Modal 元素 */
+  children: React.ReactNode;
+}
+```
+
+### 行为约定
+
+- 子元素必须为两个：第一个为“触发元素”，第二个为“类 Modal”元素；
+- 显示与事件处理：
+  - 触发元素的 `actionName`（默认 `onClick`）触发显示；
+  - 类 Modal 元素会注入 `booleanPropName` 控制显示；
+  - 确认/取消事件分别映射 `onOkName`/`onCancelName`，支持返回 `false`（阻止关闭）或返回 `Promise`（等待完成后关闭）。
+
+> 提示：配合 antd v5 时，请将 `booleanPropName` 设置为 `'open'`；默认 `'visible'` 是兼容历史项目的约束。

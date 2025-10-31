@@ -39,19 +39,31 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '51e'),
+    component: ComponentCreator('/docs', '88f'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '1ec'),
+        component: ComponentCreator('/docs', 'a54'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'a76'),
+            component: ComponentCreator('/docs', '1c1'),
             routes: [
               {
                 path: '/docs/',
                 component: ComponentCreator('/docs/', '6d8'),
+                exact: true,
+                sidebar: "components"
+              },
+              {
+                path: '/docs/components/antd-button',
+                component: ComponentCreator('/docs/components/antd-button', '56e'),
+                exact: true,
+                sidebar: "components"
+              },
+              {
+                path: '/docs/components/boolean-trigger',
+                component: ComponentCreator('/docs/components/boolean-trigger', '575'),
                 exact: true,
                 sidebar: "components"
               },
