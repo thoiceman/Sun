@@ -66,7 +66,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 35
+        "register": 18
       },
       "enableBy": "register",
       "type": "preset",
@@ -79,7 +79,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 11
+        "register": 10
       },
       "enableBy": "register",
       "type": "preset",
@@ -147,12 +147,12 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            18
+            17
           ],
           "onGenerateFiles": [
             3,
             3,
-            4
+            2
           ]
         },
         "register": 35
@@ -174,7 +174,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -191,9 +191,10 @@
             0
           ],
           "onCheck": [
-            0
+            1
           ],
           "onCheckCode": [
+            1,
             0,
             0,
             0,
@@ -225,8 +226,7 @@
             0,
             0,
             0,
-            0,
-            0,
+            1,
             0,
             0,
             0,
@@ -322,7 +322,7 @@
             0
           ]
         },
-        "register": 22
+        "register": 19
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1174,7 +1174,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1191,7 +1191,7 @@
             0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1205,7 +1205,7 @@
       "time": {
         "hooks": {
           "addBeforeMiddlewares": [
-            16
+            19
           ]
         },
         "register": 1
@@ -1234,7 +1234,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 74
+        "register": 66
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1252,7 +1252,7 @@
           ],
           "onGenerateFiles": [
             2,
-            0,
+            1,
             0
           ],
           "addRuntimePlugin": [
@@ -1261,7 +1261,7 @@
             0
           ]
         },
-        "register": 4
+        "register": 3
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1310,7 +1310,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 2
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1323,7 +1323,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1343,7 +1343,7 @@
             1
           ]
         },
-        "register": 49
+        "register": 48
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.10.0_@types+react@19.2.2_@types+webpack@5.28.5_@utoo+p_fhiow4d7zht4jvianedgxj7ndq/node_modules/@umijs/preset-umi/dist/features/mock/mock.js",
@@ -1355,7 +1355,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 3
+        "register": 2
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1424,9 +1424,9 @@
             2
           ],
           "onGenerateFiles": [
-            106,
-            22,
-            20
+            117,
+            24,
+            27
           ],
           "addPolyfillImports": [
             0,
@@ -1437,7 +1437,7 @@
             0
           ]
         },
-        "register": 4
+        "register": 2
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.10.0_@types+react@19.2.2_@types+webpack@5.28.5_@utoo+p_fhiow4d7zht4jvianedgxj7ndq/node_modules/@umijs/preset-umi/dist/features/polyfill/polyfill.js",
@@ -1458,7 +1458,7 @@
             0
           ]
         },
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1511,8 +1511,8 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            0,
-            0,
+            1,
+            1,
             0
           ],
           "addBeforeMiddlewares": [
@@ -1533,15 +1533,15 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            16,
-            5,
-            14,
+            17,
+            4,
+            13,
             2,
             10,
             1
           ]
         },
-        "register": 6
+        "register": 7
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1554,7 +1554,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 2
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1579,7 +1579,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 5
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1593,12 +1593,12 @@
       "time": {
         "hooks": {
           "onGenerateFiles": [
-            500,
-            18,
-            20
+            608,
+            19,
+            15
           ]
         },
-        "register": 5
+        "register": 4
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1615,7 +1615,7 @@
             0
           ]
         },
-        "register": 5
+        "register": 3
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1628,7 +1628,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 5
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1641,7 +1641,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 0
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1654,7 +1654,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 14
+        "register": 8
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.10.0_@types+react@19.2.2_@types+webpack@5.28.5_@utoo+p_fhiow4d7zht4jvianedgxj7ndq/node_modules/@umijs/preset-umi/dist/features/apiRoute/apiRoute.js",
@@ -1666,7 +1666,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 36
+        "register": 30
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1681,7 +1681,7 @@
         "hooks": {
           "onGenerateFiles": [
             2,
-            2,
+            1,
             1
           ]
         },
@@ -1723,7 +1723,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1765,7 +1765,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 6
+        "register": 5
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.10.0_@types+react@19.2.2_@types+webpack@5.28.5_@utoo+p_fhiow4d7zht4jvianedgxj7ndq/node_modules/@umijs/preset-umi/dist/features/ui/ui.js",
@@ -1777,7 +1777,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1802,7 +1802,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 3
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.10.0_@types+react@19.2.2_@types+webpack@5.28.5_@utoo+p_fhiow4d7zht4jvianedgxj7ndq/node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian.js",
@@ -1820,7 +1820,7 @@
             0
           ]
         },
-        "register": 37
+        "register": 38
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.10.0_@types+react@19.2.2_@types+webpack@5.28.5_@utoo+p_fhiow4d7zht4jvianedgxj7ndq/node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad.js",
@@ -1832,7 +1832,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 3
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1846,10 +1846,10 @@
       "time": {
         "hooks": {
           "modifyUniBundler": [
-            685
+            713
           ]
         },
-        "register": 3
+        "register": 2
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1862,7 +1862,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 5
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1875,7 +1875,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 56
+        "register": 65
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1889,10 +1889,10 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            11
+            12
           ]
         },
-        "register": 80
+        "register": 69
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.10.0_@types+react@19.2.2_@types+webpack@5.28.5_@utoo+p_fhiow4d7zht4jvianedgxj7ndq/node_modules/@umijs/preset-umi/dist/commands/dev/dev.js",
@@ -1930,7 +1930,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1943,7 +1943,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1982,7 +1982,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 2
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2112,7 +2112,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2125,7 +2125,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2138,7 +2138,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 3
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2294,7 +2294,7 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            1023
+            983
           ]
         },
         "register": 1
@@ -2310,7 +2310,7 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            1,
+            0,
             0
           ],
           "modifyDefaultConfig": [
@@ -2320,15 +2320,15 @@
             1
           ],
           "onGenerateFiles": [
-            1,
+            0,
             0,
             1
           ],
           "modifyBabelPresetOpts": [
-            1
+            0
           ]
         },
-        "register": 4
+        "register": 3
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2343,7 +2343,7 @@
       },
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.10.0_@types+react@19.2.2_@t_ixj7fvguswg4kluuwwyp6aai4i/node_modules/dumi/compiled/@umijs/plugins/index.js",
@@ -2376,7 +2376,7 @@
             0
           ],
           "onGenerateFiles": [
-            0,
+            1,
             0,
             0
           ]
@@ -2400,14 +2400,14 @@
             1
           ],
           "registerTechStack": [
-            1,
             0,
-            1
+            0,
+            0
           ],
           "onGenerateFiles": [
-            1,
             0,
-            1
+            0,
+            0
           ],
           "addRuntimePlugin": [
             0,
@@ -2415,10 +2415,10 @@
             0
           ],
           "chainWebpack": [
-            6
+            3
           ]
         },
-        "register": 25
+        "register": 24
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2440,9 +2440,9 @@
             0
           ],
           "modifyRoutes": [
-            8,
-            3,
-            2
+            9,
+            4,
+            4
           ],
           "addEntryCodeAhead": [
             0,
@@ -2453,7 +2453,7 @@
             0
           ]
         },
-        "register": 7
+        "register": 6
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2468,7 +2468,7 @@
         "hooks": {
           "modifyRoutes": [
             0,
-            0,
+            1,
             0
           ],
           "addRuntimePlugin": [
@@ -2477,9 +2477,9 @@
             0
           ],
           "onGenerateFiles": [
-            9,
-            4,
-            2
+            10,
+            2,
+            1
           ]
         },
         "register": 3
@@ -2501,7 +2501,7 @@
           "modifyRoutes": [
             0,
             0,
-            1
+            0
           ],
           "dumi.modifyMetaFiles": [
             0,
@@ -2509,12 +2509,12 @@
             0
           ],
           "onGenerateFiles": [
-            0,
+            1,
             0,
             0
           ]
         },
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2533,15 +2533,15 @@
           ],
           "modifyAppData": [
             0,
-            6
+            9
           ],
           "onGenerateFiles": [
+            2,
+            28,
+            0,
+            8,
             1,
-            24,
-            0,
-            12,
-            0,
-            7
+            10
           ],
           "addEntryCode": [
             0,
@@ -2554,7 +2554,7 @@
             0
           ],
           "addEntryImportsAhead": [
-            1,
+            0,
             0,
             0,
             0,
@@ -2567,7 +2567,7 @@
             0
           ]
         },
-        "register": 53
+        "register": 49
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2600,9 +2600,9 @@
             0
           ],
           "onGenerateFiles": [
-            3,
+            2,
             0,
-            1
+            0
           ]
         },
         "register": 2
@@ -2632,11 +2632,11 @@
       "time": {
         "hooks": {
           "onDevCompileDone": [
-            64,
-            33
+            66,
+            19
           ]
         },
-        "register": 1
+        "register": 0
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.10.0_@types+react@19.2.2_@t_ixj7fvguswg4kluuwwyp6aai4i/node_modules/dumi/dist/features/assets.js",
@@ -2660,7 +2660,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 25
+        "register": 19
       },
       "type": "plugin",
       "path": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.10.0_@types+react@19.2.2_@t_ixj7fvguswg4kluuwwyp6aai4i/node_modules/dumi/dist/features/sitemap.js",
@@ -2682,7 +2682,7 @@
           ],
           "addRuntimePluginKey": [
             0,
-            1,
+            0,
             0
           ],
           "onGenerateFiles": [
@@ -2691,9 +2691,9 @@
             0
           ],
           "addHTMLHeadScripts": [
-            58,
-            31,
-            0
+            61,
+            0,
+            1
           ]
         },
         "register": 1
@@ -2751,8 +2751,8 @@
       ]
     },
     "alias": {
-      "@thoiceman/ui": "/Users/thomas/Desktop/Sun/packages/ui/src",
-      "@thoiceman/icons": "/Users/thomas/Desktop/Sun/packages/icons/src"
+      "@sun-x/ui": "/Users/thomas/Desktop/Sun/packages/ui/src",
+      "@sun-x/icons": "/Users/thomas/Desktop/Sun/packages/icons/src"
     }
   },
   "mainConfigFile": "/Users/thomas/Desktop/Sun/.dumirc.ts",
@@ -2777,8 +2777,8 @@
       "react-dom": "/Users/thomas/Desktop/Sun/node_modules/react-dom",
       "react-router": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/react-router@6.3.0_react@18.3.1/node_modules/react-router",
       "react-router-dom": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/react-router-dom@6.3.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router-dom",
-      "@thoiceman/ui": "/Users/thomas/Desktop/Sun/packages/ui/src",
-      "@thoiceman/icons": "/Users/thomas/Desktop/Sun/packages/icons/src",
+      "@sun-x/ui": "/Users/thomas/Desktop/Sun/packages/ui/src",
+      "@sun-x/icons": "/Users/thomas/Desktop/Sun/packages/icons/src",
       "@": "/Users/thomas/Desktop/Sun",
       "@@": "/Users/thomas/Desktop/Sun/.dumi/tmp",
       "regenerator-runtime": "/Users/thomas/Desktop/Sun/node_modules/.pnpm/regenerator-runtime@0.13.11/node_modules/regenerator-runtime",
@@ -2949,7 +2949,7 @@
     "done": true,
     "progresses": [
       {
-        "percent": 0.5134751773049647,
+        "percent": 0.55019305019305,
         "status": "building",
         "details": [
           "2/3 entries 212/213 dependencies 1010/125 modules"

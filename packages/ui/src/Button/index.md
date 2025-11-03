@@ -11,7 +11,7 @@ group:
 
 ```tsx
 import React from 'react';
-import { Button } from '@thoiceman/ui';
+import { Button } from '@sun-x/ui';
 
 export default () => (
   <>

@@ -16,7 +16,7 @@ export default defineConfig({
     ],
   },
   alias: {
-    '@thoiceman/ui': path.resolve(__dirname, 'packages/ui/src'),
-    '@thoiceman/icons': path.resolve(__dirname, 'packages/icons/src'),
+    '@sun-x/ui': path.resolve(__dirname, 'packages/ui/src'),
+    '@sun-x/icons': path.resolve(__dirname, 'packages/icons/src'),
   },
 });

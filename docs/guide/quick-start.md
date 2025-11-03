@@ -6,15 +6,15 @@ order: 1
 ## 安装
 
 ```bash
-pnpm add @thoiceman/ui @thoiceman/icons react react-dom
+pnpm add @sun-x/ui @sun-x/icons react react-dom
 ```
 
 ## 使用示例
 
 ```tsx
 import React from 'react';
-import { Button } from '@thoiceman/ui';
-import { IconStar } from '@thoiceman/icons';
+import { Button } from '@sun-x/ui';
+import { IconStar } from '@sun-x/icons';
 
 export default () => (
   <>

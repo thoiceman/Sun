@@ -9,7 +9,7 @@ group:
 
 ```tsx
 import React from 'react';
-import { IconStar } from '@thoiceman/icons';
+import { IconStar } from '@sun-x/icons';
 
 export default () => (
   <>
