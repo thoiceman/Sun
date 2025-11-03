@@ -2,7 +2,7 @@ name: Release
 
 on:
   push:
-    branches: [main]
+    branches: [main,master]
   workflow_dispatch:
     inputs:
       npm_otp:
@@ -15,14 +15,20 @@ jobs:
     name: Publish to npm
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
+      pull-requests: read
+      statuses: read
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       # 如开启 2FA，可在手动触发时传入 OTP；若使用 Automation Token，则无需 OTP
       NPM_CONFIG_OTP: ${{ inputs.npm_otp || secrets.NPM_OTP }}
+      # 为 @changesets/changelog-github 提供 GitHub API 访问令牌
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -54,5 +60,19 @@ jobs:
       - name: Lint
         run: pnpm -r lint
 
+      - name: Configure Git for Changesets commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Release
         run: pnpm release
+
+      - name: Push version commit and tags
+        if: ${{ !cancelled() }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          BRANCH="${{ github.ref_name }}"
+          git pull --rebase origin "$BRANCH" || true
+          git push origin "$BRANCH" --follow-tags

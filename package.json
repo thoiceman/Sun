@@ -25,25 +25,26 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
-  "devDependencies": {
-    "@changesets/cli": "^2.29.7",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.0",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "jsdom": "^24.0.0",
-    "dumi": "^2.4.21",
-    "eslint": "^9.39.0",
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
-    "@typescript-eslint/parser": "^8.46.2",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "father": "^4.6.7",
-    "prettier": "^3.6.2",
-    "turbo": "^2.6.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.6",
-    "antd": "^5",
-    "@ant-design/icons": "^5"
-  }
+    "devDependencies": {
+        "@ant-design/icons": "^5",
+        "@changesets/changelog-github": "^0.5.1",
+        "@changesets/cli": "^2.29.7",
+        "@testing-library/jest-dom": "^6.9.1",
+        "@testing-library/react": "^16.3.0",
+        "@types/react": "^19.2.2",
+        "@types/react-dom": "^19.2.2",
+        "@typescript-eslint/eslint-plugin": "^8.46.2",
+        "@typescript-eslint/parser": "^8.46.2",
+        "antd": "^5",
+        "dumi": "^2.4.21",
+        "eslint": "^9.39.0",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^7.0.1",
+        "father": "^4.6.7",
+        "jsdom": "^24.0.0",
+        "prettier": "^3.6.2",
+        "turbo": "^2.6.0",
+        "typescript": "^5.9.3",
+        "vitest": "^4.0.6"
+    }
 }
