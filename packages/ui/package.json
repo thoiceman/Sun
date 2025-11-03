@@ -1,5 +1,5 @@
 {
-  "name": "@sun/ui",
+  "name": "@thoiceman/ui",
   "version": "0.0.0",
   "private": false,
   "main": "dist/cjs/index.js",

@@ -12,7 +12,7 @@
 │     ├─ quick-start.md      # 快速开始
 │     └─ dev.md              # 开发与发布流程
 ├─ packages/
-│  ├─ ui/                    # UI 组件包（@sun/ui）
+│  ├─ ui/                    # UI 组件包（@thoiceman/ui）
 │  │  ├─ src/                # 组件源码与旁路文档
 │  │  │  ├─ Button/          # 示例组件：按钮
 │  │  │  │  ├─ index.tsx     # 组件入口
@@ -22,7 +22,7 @@
 │  │  ├─ .fatherrc.ts        # father 构建配置（esm/cjs）
 │  │  ├─ tsconfig.json       # 包内 TS 配置（声明目录）
 │  │  └─ vitest.config.mts   # Vitest 测试配置（jsdom）
-│  └─ icons/                 # 图标包（@sun/icons）
+│  └─ icons/                 # 图标包（@thoiceman/icons）
 │     ├─ src/
 │     │  ├─ IconStar/
 │     │  │  ├─ index.tsx
@@ -66,14 +66,14 @@ pnpm -r build
 pnpm -r lint
 pnpm -r test
 
-# 仅构建某包（示例：@sun/ui）
-turbo run build --filter=@sun/ui
+# 仅构建某包（示例：@thoiceman/ui）
+turbo run build --filter=@thoiceman/ui
 
 # 构建静态文档站
 pnpm build:docs
 ```
 
-## 新增组件步骤（@sun/ui）
+## 新增组件步骤（@thoiceman/ui）
 
 1. 创建组件目录与文件：
    - `packages/ui/src/MyComponent/index.tsx`
@@ -134,7 +134,7 @@ pnpm build:docs
 - `pnpm -r build`：递归构建所有包（father）
 - `pnpm -r lint`：递归 ESLint 检查
 - `pnpm -r test`：递归 Vitest 测试
-- `turbo run build --filter=@sun/ui`：仅构建 UI 包
+- `turbo run build --filter=@thoiceman/ui`：仅构建 UI 包
 - `pnpm build:docs`：构建静态文档站
 - `pnpm changeset` → `pnpm release`：版本与发布流程
 

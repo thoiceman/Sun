@@ -1,5 +1,5 @@
 {
-  "name": "@sun/icons",
+  "name": "@thoiceman/icons",
   "version": "0.0.0",
   "private": false,
   "main": "dist/cjs/index.js",
