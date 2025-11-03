@@ -12,8 +12,8 @@ export default defineConfig({
   resolve: {
     atomDirs: [
       { type: 'component', dir: 'packages/ui/src' },
-      { type: 'component', dir: 'packages/icons/src' }
-    ]
+      { type: 'component', dir: 'packages/icons/src' },
+    ],
   },
   alias: {
     '@sun/ui': path.resolve(__dirname, 'packages/ui/src'),

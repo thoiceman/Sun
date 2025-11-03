@@ -3,14 +3,16 @@
 // DO NOT CHANGE IT MANUALLY!
 import { frontmatter as fm0, toc as t0 } from '/Users/thomas/Desktop/Sun/docs/guide/quick-start.md?type=frontmatter';
 import { demoIndex as dmi0 } from '/Users/thomas/Desktop/Sun/docs/guide/quick-start.md?type=demo-index';
-import { frontmatter as fm1, toc as t1 } from '/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=frontmatter';
-import { demoIndex as dmi1 } from '/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=demo-index';
-import { frontmatter as fm2, toc as t2 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=frontmatter';
-import { demoIndex as dmi2 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=demo-index';
-import { frontmatter as fm3, toc as t3 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=frontmatter';
-import { demoIndex as dmi3 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=demo-index';
-import { frontmatter as fm4, toc as t4 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=frontmatter';
-import { demoIndex as dmi4 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=demo-index';
+import { frontmatter as fm1, toc as t1 } from '/Users/thomas/Desktop/Sun/docs/components/index.md?type=frontmatter';
+import { demoIndex as dmi1 } from '/Users/thomas/Desktop/Sun/docs/components/index.md?type=demo-index';
+import { frontmatter as fm2, toc as t2 } from '/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=frontmatter';
+import { demoIndex as dmi2 } from '/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=demo-index';
+import { frontmatter as fm3, toc as t3 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=frontmatter';
+import { demoIndex as dmi3 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=demo-index';
+import { frontmatter as fm4, toc as t4 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=frontmatter';
+import { demoIndex as dmi4 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=demo-index';
+import { frontmatter as fm5, toc as t5 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=frontmatter';
+import { demoIndex as dmi5 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=demo-index';
 
 export const filesMeta = {
   'docs/guide/quick-start': {
@@ -19,28 +21,34 @@ export const filesMeta = {
     demoIndex: dmi0,
     textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/guide/quick-start.md?type=text'),
   },
-  'docs/guide/dev': {
+  'docs/components/index': {
     frontmatter: fm1,
     toc: t1,
     demoIndex: dmi1,
-    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/components/index.md?type=text'),
   },
-  'docs/index': {
+  'docs/guide/dev': {
     frontmatter: fm2,
     toc: t2,
     demoIndex: dmi2,
-    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/index.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=text'),
   },
-  'components/Button/index': {
+  'docs/index': {
     frontmatter: fm3,
     toc: t3,
     demoIndex: dmi3,
-    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/index.md?type=text'),
   },
-  'components/IconStar/index': {
+  'components/Button/index': {
     frontmatter: fm4,
     toc: t4,
     demoIndex: dmi4,
+    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=text'),
+  },
+  'components/IconStar/index': {
+    frontmatter: fm5,
+    toc: t5,
+    demoIndex: dmi5,
     textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=text'),
   },
 }

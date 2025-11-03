@@ -16,13 +16,15 @@ import { Button } from '@sun/ui';
 export default () => (
   <>
     <Button>默认按钮</Button>
-    <Button variant="secondary" style={{ marginLeft: 8 }}>次要按钮</Button>
+    <Button variant="secondary" style={{ marginLeft: 8 }}>
+      次要按钮
+    </Button>
   </>
 );
 ```
 
 ## API
 
-| 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
+| 属性    | 说明     | 类型      | 默认值      |
+| ------- | -------- | --------- | ----------- | --------- |
 | variant | 按钮风格 | 'primary' | 'secondary' | 'primary' |

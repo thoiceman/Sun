@@ -14,7 +14,9 @@
     "build:docs": "dumi build",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "release": "changeset version && pnpm -r build && changeset publish"
+    "release": "changeset version && pnpm -r build && changeset publish",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "react": "^18.2.0",

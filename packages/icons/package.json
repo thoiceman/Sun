@@ -11,5 +11,8 @@
     "test": "vitest --run",
     "lint": "eslint src --ext .ts,.tsx"
   },
-  "peerDependencies": { "react": ">=18", "react-dom": ">=18" }
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
 }

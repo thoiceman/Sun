@@ -1,5 +1,14 @@
 .btn {
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
   font-size: 14px;
   line-height: 1;
   padding: 8px 12px;
@@ -8,7 +17,18 @@
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
-.primary { background: var(--color-primary, #1677ff); color: #fff; }
-.primary:hover { filter: brightness(1.05); }
-.secondary { background: #fff; color: #333; border-color: #d9d9d9; }
-.secondary:hover { background: #f7f7f7; }
+.primary {
+  background: var(--color-primary, #1677ff);
+  color: #fff;
+}
+.primary:hover {
+  filter: brightness(1.05);
+}
+.secondary {
+  background: #fff;
+  color: #333;
+  border-color: #d9d9d9;
+}
+.secondary:hover {
+  background: #f7f7f7;
+}

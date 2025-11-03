@@ -19,7 +19,9 @@ import { IconStar } from '@sun/icons';
 export default () => (
   <>
     <Button>默认按钮</Button>
-    <Button variant="secondary" style={{ marginLeft: 8 }}>次要按钮</Button>
+    <Button variant="secondary" style={{ marginLeft: 8 }}>
+      次要按钮
+    </Button>
     <IconStar size={20} style={{ marginLeft: 12 }} />
   </>
 );
