@@ -1,57 +1,42 @@
 {
   "name": "sun-monorepo",
   "private": true,
-  "version": "0.1.0",
-  "description": "Sun React 组件库 Monorepo",
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.0.0",
+  "pnpm": {
+    "overrides": {
+      "esbuild": "0.21.4"
+    }
+  },
   "scripts": {
+    "dev": "dumi dev",
     "build": "turbo run build",
-    "dev": "turbo run dev --filter=storybook-app",
-    "lint": "turbo run lint",
+    "build:docs": "dumi build",
     "test": "turbo run test",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
-    "release": "standard-version",
-    "size": "size-limit",
-    "prepare": "husky install"
+    "lint": "turbo run lint",
+    "release": "changeset version && pnpm -r build && changeset publish"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@size-limit/preset-big-lib": "^11.2.0",
-    "@storybook/react-vite": "^8.6.14",
-    "@typescript-eslint/eslint-plugin": "^8.10.0",
-    "@typescript-eslint/parser": "^8.10.0",
-    "browserslist": "^4.23.0",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "husky": "^9.0.10",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5",
-    "size-limit": "^10.0.0",
-    "standard-version": "^9.5.0",
-    "storybook": "^8.6.14",
-    "turbo": "^2.5.8",
-    "typescript": "^5.4.2"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,css,md}": [
-      "prettier --write"
-    ]
-  },
-  "browserslist": [
-    "defaults",
-    "not IE 11",
-    "not dead"
-  ],
-  "packageManager": "npm@10.8.2"
+    "@changesets/cli": "^2.29.7",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "jsdom": "^24.0.0",
+    "dumi": "^2.4.21",
+    "eslint": "^9.39.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "father": "^4.6.7",
+    "prettier": "^3.6.2",
+    "turbo": "^2.6.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.6"
+  }
 }

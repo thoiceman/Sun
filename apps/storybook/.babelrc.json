@@ -1,9 +1,0 @@
-{
-  "plugins": [
-    [
-      "import",
-      { "libraryName": "@sun/ui", "libraryDirectory": "", "camel2DashComponentName": false },
-      "@sun/ui"
-    ]
-  ]
-}

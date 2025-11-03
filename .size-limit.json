@@ -1,7 +1,0 @@
-[
-  {
-    "name": "@sun/ui esm bundle",
-    "path": "packages/ui/dist/index.mjs",
-    "limit": "20 KB"
-  }
-]
