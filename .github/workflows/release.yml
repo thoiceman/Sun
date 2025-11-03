@@ -16,10 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: read
+      statuses: read
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       # 如开启 2FA，可在手动触发时传入 OTP；若使用 Automation Token，则无需 OTP
       NPM_CONFIG_OTP: ${{ inputs.npm_otp || secrets.NPM_OTP }}
+      # 为 @changesets/changelog-github 提供 GitHub API 访问令牌
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
