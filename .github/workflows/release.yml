@@ -60,6 +60,11 @@ jobs:
       - name: Lint
         run: pnpm -r lint
 
+      - name: Configure Git for Changesets commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Release
         run: pnpm release
 
