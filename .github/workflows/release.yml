@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      npm_otp:
+        description: 'npm one-time password (2FA) for publishing'
+        required: false
+        type: string
 
 jobs:
   publish:
@@ -13,8 +18,8 @@ jobs:
       contents: read
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # 如开启 2FA，请在仓库 Secrets 配置 NPM_OTP
-      NPM_CONFIG_OTP: ${{ secrets.NPM_OTP }}
+      # 如开启 2FA，可在手动触发时传入 OTP；若使用 Automation Token，则无需 OTP
+      NPM_CONFIG_OTP: ${{ inputs.npm_otp || secrets.NPM_OTP }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,6 +29,8 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
+          always-auth: true
+          cache: 'pnpm'
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -32,6 +39,15 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Show npm/pnpm info
+        run: |
+          pnpm -v
+          npm -v
+          npm config get registry
+
+      - name: Verify npm auth
+        run: npm whoami
 
       - name: Test
         run: pnpm -r test
