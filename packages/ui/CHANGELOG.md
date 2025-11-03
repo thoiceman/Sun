@@ -1,5 +1,11 @@
 # @sun-x/ui
 
+## 0.1.1
+
+### Patch Changes
+
+- [`f1db801`](https://github.com/thoiceman/Sun/commit/f1db801df0356e6fb8a82eaf7faaa622538e9095) Thanks [@thoiceman](https://github.com/thoiceman)! - 修改文档
+
 ## 0.1.0
 
 ### Minor Changes
