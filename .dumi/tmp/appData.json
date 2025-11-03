@@ -114,6 +114,8 @@
           "modifyRoutes": [
             0,
             0,
+            0,
+            0,
             0
           ]
         },
@@ -142,6 +144,8 @@
             0,
             0,
             0,
+            0,
+            1,
             0
           ]
         },
@@ -164,7 +168,9 @@
           "onGenerateFiles": [
             2,
             6,
-            3
+            3,
+            3,
+            10
           ]
         },
         "register": 28
@@ -181,6 +187,8 @@
       "time": {
         "hooks": {
           "addEntryCode": [
+            0,
+            0,
             0,
             0,
             0
@@ -206,6 +214,13 @@
             0
           ],
           "onCheckCode": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -1248,9 +1263,13 @@
           "onGenerateFiles": [
             2,
             0,
-            0
+            0,
+            0,
+            1
           ],
           "addRuntimePlugin": [
+            0,
+            0,
             0,
             0,
             0
@@ -1289,6 +1308,13 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
           ]
         },
@@ -1308,9 +1334,13 @@
           "onGenerateFiles": [
             2,
             1,
-            0
+            0,
+            0,
+            1
           ],
           "addRuntimePlugin": [
+            0,
+            0,
             0,
             0,
             0
@@ -1389,9 +1419,15 @@
           "onGenerateFiles": [
             0,
             0,
+            0,
+            0,
             0
           ],
           "addEntryImports": [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -1432,9 +1468,15 @@
           "onGenerateFiles": [
             109,
             45,
-            31
+            31,
+            29,
+            84
           ],
           "addPolyfillImports": [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -1456,6 +1498,10 @@
       "time": {
         "hooks": {
           "addPolyfillImports": [
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -1519,6 +1565,8 @@
           "onGenerateFiles": [
             0,
             0,
+            0,
+            0,
             0
           ],
           "addBeforeMiddlewares": [
@@ -1544,7 +1592,11 @@
             18,
             3,
             13,
-            2
+            2,
+            12,
+            1,
+            27,
+            6
           ]
         },
         "register": 8
@@ -1601,7 +1653,9 @@
           "onGenerateFiles": [
             520,
             28,
-            21
+            21,
+            22,
+            47
           ]
         },
         "register": 10
@@ -1688,7 +1742,9 @@
           "onGenerateFiles": [
             3,
             2,
-            1
+            1,
+            1,
+            2
           ]
         },
         "register": 1
@@ -1821,6 +1877,13 @@
       "time": {
         "hooks": {
           "addHTMLHeadScripts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -2339,7 +2402,9 @@
           "onGenerateFiles": [
             0,
             1,
-            1
+            1,
+            0,
+            0
           ],
           "modifyBabelPresetOpts": [
             0
@@ -2395,7 +2460,9 @@
           "onGenerateFiles": [
             0,
             0,
-            1
+            1,
+            0,
+            0
           ]
         },
         "register": 1
@@ -2419,14 +2486,20 @@
           "registerTechStack": [
             0,
             0,
-            0
+            0,
+            0,
+            1
           ],
           "onGenerateFiles": [
+            1,
+            0,
             1,
             0,
             1
           ],
           "addRuntimePlugin": [
+            0,
+            0,
             0,
             0,
             0
@@ -2454,14 +2527,20 @@
           "addLayouts": [
             0,
             0,
+            0,
+            0,
             0
           ],
           "modifyRoutes": [
             8,
             5,
-            5
+            5,
+            4,
+            8
           ],
           "addEntryCodeAhead": [
+            0,
+            0,
             0,
             0,
             0
@@ -2486,9 +2565,13 @@
           "modifyRoutes": [
             0,
             1,
-            0
+            0,
+            0,
+            1
           ],
           "addRuntimePlugin": [
+            0,
+            0,
             0,
             0,
             0
@@ -2496,7 +2579,9 @@
           "onGenerateFiles": [
             8,
             4,
-            2
+            2,
+            2,
+            8
           ]
         },
         "register": 3
@@ -2518,17 +2603,23 @@
           "modifyRoutes": [
             0,
             0,
+            0,
+            0,
             0
           ],
           "dumi.modifyMetaFiles": [
             0,
             0,
-            0
+            0,
+            0,
+            1
           ],
           "onGenerateFiles": [
             1,
             0,
-            0
+            0,
+            0,
+            1
           ]
         },
         "register": 0
@@ -2558,14 +2649,22 @@
             1,
             18,
             0,
-            14
+            14,
+            1,
+            8,
+            1,
+            30
           ],
           "addEntryCode": [
+            0,
+            0,
             0,
             0,
             0
           ],
           "addEntryCodeAhead": [
+            0,
+            0,
             0,
             0,
             0
@@ -2576,9 +2675,15 @@
             0,
             0,
             0,
-            0
+            0,
+            0,
+            0,
+            0,
+            1
           ],
           "addRuntimePluginKey": [
+            0,
+            0,
             0,
             0,
             0
@@ -2614,11 +2719,15 @@
           "addRuntimePlugin": [
             0,
             0,
+            0,
+            0,
             0
           ],
           "onGenerateFiles": [
             2,
             1,
+            1,
+            0,
             1
           ]
         },
@@ -2660,7 +2769,9 @@
             63,
             25,
             57,
-            66
+            66,
+            45,
+            83
           ]
         },
         "register": 0
@@ -2705,15 +2816,23 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePluginKey": [
+            0,
+            0,
             0,
             0,
             0
           ],
           "onGenerateFiles": [
             1,
+            0,
+            0,
             0,
             0
           ],
@@ -2728,6 +2847,13 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
             0,
             0,
             0,
@@ -2931,6 +3057,13 @@
       "parentId": "DocLayout",
       "file": "/Users/thomas/Desktop/Sun/docs/components/index.md",
       "absPath": "/components"
+    },
+    "docs/guide/releases": {
+      "path": "guide/releases",
+      "id": "docs/guide/releases",
+      "parentId": "DocLayout",
+      "file": "/Users/thomas/Desktop/Sun/docs/guide/releases.md",
+      "absPath": "/guide/releases"
     },
     "docs/guide/dev": {
       "path": "guide/dev",
