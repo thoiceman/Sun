@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './style.module.css';
+import { Button as AntButton } from 'antd';
+import type { ButtonProps as AntButtonProps } from 'antd';
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends Omit<AntButtonProps, 'type' | 'variant'> {
   variant?: 'primary' | 'secondary';
 }
 
@@ -11,10 +11,10 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   ...rest
 }) => {
-  const className = `${styles.btn} ${variant === 'primary' ? styles.primary : styles.secondary}`;
+  const type = variant === 'primary' ? 'primary' : 'default';
   return (
-    <button className={className} {...rest}>
+    <AntButton type={type} {...rest}>
       {children}
-    </button>
+    </AntButton>
   );
 };

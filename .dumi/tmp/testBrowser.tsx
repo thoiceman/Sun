@@ -10,6 +10,7 @@ import { getRoutes } from './core/route';
 import type { Location } from 'history';
 
 
+import '/Users/thomas/Desktop/Sun/.dumi/global.ts';
 import { getPluginManager as getDumiPluginManager } from './core/plugin';
 import { setPluginManager as setDumiPluginManager } from '/Users/thomas/Desktop/Sun/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.10.0_@types+react@19.2.2_@t_ixj7fvguswg4kluuwwyp6aai4i/node_modules/dumi/dist/client/theme-api/utils.js';
 const publicPath = '/';

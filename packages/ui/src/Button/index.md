@@ -19,6 +19,7 @@ export default () => (
     <Button variant="secondary" style={{ marginLeft: 8 }}>
       次要按钮
     </Button>
+    <Button danger style={{ marginLeft: 8 }}>警告按钮</Button>
   </>
 );
 ```
