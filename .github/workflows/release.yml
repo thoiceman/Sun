@@ -68,6 +68,27 @@ jobs:
       - name: Release
         run: pnpm release
 
+      - name: Sync CHANGELOG to docs
+        if: ${{ !cancelled() }}
+        run: |
+          set -e
+          mkdir -p docs/changelogs
+          # 同步各包 CHANGELOG 到文档目录
+          if [ -f packages/ui/CHANGELOG.md ]; then
+            cp packages/ui/CHANGELOG.md docs/changelogs/ui.md
+          fi
+          if [ -f packages/icons/CHANGELOG.md ]; then
+            cp packages/icons/CHANGELOG.md docs/changelogs/icons.md
+          fi
+          # 如有实际变更则提交（避免空提交）
+          if [[ -n "$(git status --porcelain docs/changelogs)" ]]; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add docs/changelogs/ui.md || true
+            git add docs/changelogs/icons.md || true
+            git commit -m "docs(changelogs): sync CHANGELOG into docs"
+          fi
+
       - name: Push version commit and tags
         if: ${{ !cancelled() }}
         run: |
