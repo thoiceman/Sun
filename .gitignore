@@ -1,5 +1,6 @@
 node_modules/
 .turbo/
+.dumi/tmp/
 dist/
 coverage/
 .DS_Store
