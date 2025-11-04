@@ -1,5 +1,11 @@
 # @sun-x/icons
 
+## 1.0.1
+
+### Patch Changes
+
+- [`95fc157`](https://github.com/thoiceman/Sun/commit/95fc15772e2e431610ca892b4948de0d6ade5902) Thanks [@thoiceman](https://github.com/thoiceman)! - 添加发布流程文档，常用发布教程
+
 ## 1.0.0
 
 ### Major Changes
