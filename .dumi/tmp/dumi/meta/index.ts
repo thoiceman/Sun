@@ -19,8 +19,18 @@ import { frontmatter as fm7, toc as t7 } from '/Users/thomas/Desktop/Sun/docs/in
 import { demoIndex as dmi7 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=demo-index';
 import { frontmatter as fm8, toc as t8 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=frontmatter';
 import { demoIndex as dmi8 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=demo-index';
-import { frontmatter as fm9, toc as t9 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=frontmatter';
-import { demoIndex as dmi9 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=demo-index';
+import { frontmatter as fm9, toc as t9 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Card/index.md?type=frontmatter';
+import { demoIndex as dmi9 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Card/index.md?type=demo-index';
+import { frontmatter as fm10, toc as t10 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Form/index.md?type=frontmatter';
+import { demoIndex as dmi10 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Form/index.md?type=demo-index';
+import { frontmatter as fm11, toc as t11 } from '/Users/thomas/Desktop/Sun/packages/ui/src/InputField/index.md?type=frontmatter';
+import { demoIndex as dmi11 } from '/Users/thomas/Desktop/Sun/packages/ui/src/InputField/index.md?type=demo-index';
+import { frontmatter as fm12, toc as t12 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Modal/index.md?type=frontmatter';
+import { demoIndex as dmi12 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Modal/index.md?type=demo-index';
+import { frontmatter as fm13, toc as t13 } from '/Users/thomas/Desktop/Sun/packages/ui/src/NavBar/index.md?type=frontmatter';
+import { demoIndex as dmi13 } from '/Users/thomas/Desktop/Sun/packages/ui/src/NavBar/index.md?type=demo-index';
+import { frontmatter as fm14, toc as t14 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=frontmatter';
+import { demoIndex as dmi14 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=demo-index';
 
 export const filesMeta = {
   'docs/guide/quick-start': {
@@ -77,10 +87,40 @@ export const filesMeta = {
     demoIndex: dmi8,
     textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=text'),
   },
-  'components/IconStar/index': {
+  'components/Card/index': {
     frontmatter: fm9,
     toc: t9,
     demoIndex: dmi9,
+    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/Card/index.md?type=text'),
+  },
+  'components/Form/index': {
+    frontmatter: fm10,
+    toc: t10,
+    demoIndex: dmi10,
+    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/Form/index.md?type=text'),
+  },
+  'components/InputField/index': {
+    frontmatter: fm11,
+    toc: t11,
+    demoIndex: dmi11,
+    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/InputField/index.md?type=text'),
+  },
+  'components/Modal/index': {
+    frontmatter: fm12,
+    toc: t12,
+    demoIndex: dmi12,
+    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/Modal/index.md?type=text'),
+  },
+  'components/NavBar/index': {
+    frontmatter: fm13,
+    toc: t13,
+    demoIndex: dmi13,
+    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/NavBar/index.md?type=text'),
+  },
+  'components/IconStar/index': {
+    frontmatter: fm14,
+    toc: t14,
+    demoIndex: dmi14,
     textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=text'),
   },
 }
