@@ -1,0 +1,13 @@
+.card {
+  --card-radius: var(--ui-radius, 8px);
+  --card-shadow: var(--ui-shadow, 0 2px 8px rgba(0,0,0,0.08));
+}
+.card :global(.ant-card) {
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+}
+@media (max-width: 576px) {
+  .card :global(.ant-card) {
+    margin: 0;
+  }
+}

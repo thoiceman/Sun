@@ -11,14 +11,16 @@ order: 3
 
 - 使用 Changesets 在每次改动时编写变更文件（语义化版本：`major/minor/patch`）。
 - 推送到 `main/master` 后，CI 会执行版本号提升、构建、发布，并把版本提交与 `CHANGELOG.md` 回写推送到仓库。
-- 每个包的发布记录位于对应目录下的 `CHANGELOG.md`（如：`packages/ui/CHANGELOG.md`）。
+- 每个包的发布记录位于对应目录下的 `CHANGELOG.md`（如：`packages/ui/CHANGELOG.md`），然后通过脚本覆盖到 `docs/changelogs/xxx.md`中；由于是在github上覆盖的，所以每次推送代码，待发布成功后，如果要获取最新的文档，需要pull一下，才能在文档中看到更新日志。
 
 ## 日常命令
 
 ```bash
-# 新增一条变更记录（交互式选择包与版本级别）
+# 新增一条变更记录（交互式选择包与版本级别）执行后会在.changeset/下生成一个md文件,记录了提交信息，自己也可以修改，推送后，脚本会删除这个生成的文件，并把文件内容添加到对应的包的CHANGELOG.md中；如果你希望这次修改不生成更新日志，那就不需要执行这个命令
 pnpm changeset
 
+
+#注意：以下命令推送代码后，由github上的脚本自动执行
 # 本地生成版本与 CHANGELOG（不发布）
 pnpm changeset version
 

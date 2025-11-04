@@ -17,7 +17,7 @@ const entryExports = {
 const pkg = {"name":"sun-monorepo","version":"0.0.0"};
 const historyType = "browser";
 const hostname = undefined;
-const themeConfig = {"footer":"Copyright © 2025 | Powered by <a href=\"https://d.umijs.org\" target=\"_blank\" rel=\"noreferrer\">dumi</a>","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"name":"Sun","nav":[{"title":"指南","link":"/guide/quick-start"},{"title":"组件","link":"/components"}]};
+const themeConfig = {"footer":"Copyright © 2025 | Powered by <a href=\"https://d.umijs.org\" target=\"_blank\" rel=\"noreferrer\">dumi</a>","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"name":"Sun","nav":[{"title":"指南","link":"/guide/quick-start"},{"title":"组件","link":"/components"},{"title":"发布记录","link":"/changelogs"}]};
 const _2_level_nav_available = true;
 
 export default function DumiContextWrapper() {

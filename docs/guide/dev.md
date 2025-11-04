@@ -19,4 +19,4 @@ order: 2
 ## 发布（Changesets）
 
 1. 创建变更：`pnpm changeset`
-2. 合并后发布：`pnpm release`（版本提升 → 递归构建 → 发布到 npm）
+2. git推送代码，触发github action自动发布（详情见[发布流程](releases.md)）

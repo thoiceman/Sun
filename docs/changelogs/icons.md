@@ -1,4 +1,4 @@
-# @sun-x/ui
+# @sun-x/icons
 
 ## 1.0.1
 
