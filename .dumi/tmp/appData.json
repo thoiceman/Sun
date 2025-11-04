@@ -114,6 +114,9 @@
         "hooks": {
           "modifyRoutes": [
             0,
+            0,
+            0,
+            0,
             0
           ]
         },
@@ -131,6 +134,9 @@
       "time": {
         "hooks": {
           "onDevCompileDone": [
+            0,
+            0,
+            0,
             0,
             0,
             0
@@ -154,7 +160,10 @@
           ],
           "onGenerateFiles": [
             3,
-            5
+            5,
+            4,
+            6,
+            8
           ]
         },
         "register": 35
@@ -171,6 +180,9 @@
       "time": {
         "hooks": {
           "addEntryCode": [
+            0,
+            0,
+            0,
             0,
             0
           ]
@@ -250,6 +262,14 @@
             0,
             0,
             1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0
           ]
@@ -1231,9 +1251,15 @@
           ],
           "onGenerateFiles": [
             2,
+            1,
+            1,
+            1,
             1
           ],
           "addRuntimePlugin": [
+            0,
+            0,
+            0,
             0,
             0
           ]
@@ -1262,6 +1288,16 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
           ]
         },
@@ -1280,9 +1316,15 @@
         "hooks": {
           "onGenerateFiles": [
             2,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePlugin": [
+            0,
+            0,
+            0,
             0,
             0
           ]
@@ -1359,10 +1401,19 @@
         "hooks": {
           "onGenerateFiles": [
             0,
+            0,
+            0,
+            0,
             0
           ],
           "addEntryImports": [
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
             0,
             0,
             0
@@ -1399,9 +1450,18 @@
           ],
           "onGenerateFiles": [
             152,
-            51
+            51,
+            53,
+            65,
+            67
           ],
           "addPolyfillImports": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -1421,6 +1481,12 @@
       "time": {
         "hooks": {
           "addPolyfillImports": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -1481,6 +1547,9 @@
         "hooks": {
           "onGenerateFiles": [
             0,
+            1,
+            2,
+            1,
             1
           ],
           "addBeforeMiddlewares": [
@@ -1504,6 +1573,12 @@
             19,
             4,
             28,
+            4,
+            33,
+            3,
+            45,
+            4,
+            30,
             4
           ]
         },
@@ -1560,7 +1635,10 @@
         "hooks": {
           "onGenerateFiles": [
             604,
-            50
+            50,
+            32,
+            92,
+            40
           ]
         },
         "register": 9
@@ -1646,7 +1724,10 @@
         "hooks": {
           "onGenerateFiles": [
             2,
-            1
+            1,
+            1,
+            1,
+            2
           ]
         },
         "register": 1
@@ -1779,6 +1860,16 @@
       "time": {
         "hooks": {
           "addHTMLHeadScripts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -2287,7 +2378,10 @@
           ],
           "onGenerateFiles": [
             1,
-            1
+            1,
+            1,
+            1,
+            0
           ],
           "modifyBabelPresetOpts": [
             0
@@ -2342,7 +2436,10 @@
           ],
           "onGenerateFiles": [
             1,
-            1
+            1,
+            0,
+            1,
+            0
           ]
         },
         "register": 1
@@ -2365,13 +2462,22 @@
           ],
           "registerTechStack": [
             0,
+            0,
+            0,
+            0,
             0
           ],
           "onGenerateFiles": [
             0,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePlugin": [
+            0,
+            0,
+            0,
             0,
             0
           ],
@@ -2397,15 +2503,24 @@
           ],
           "addLayouts": [
             0,
+            0,
+            1,
+            0,
             0
           ],
           "modifyRoutes": [
             9,
-            12
+            12,
+            9,
+            19,
+            13
           ],
           "addEntryCodeAhead": [
             0,
-            0
+            0,
+            0,
+            0,
+            1
           ],
           "addTmpGenerateWatcherPaths": [
             0
@@ -2426,15 +2541,24 @@
         "hooks": {
           "modifyRoutes": [
             0,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePlugin": [
+            0,
+            0,
+            1,
             0,
             0
           ],
           "onGenerateFiles": [
             7,
-            2
+            2,
+            2,
+            3,
+            3
           ]
         },
         "register": 3
@@ -2455,13 +2579,22 @@
           ],
           "modifyRoutes": [
             0,
+            0,
+            1,
+            0,
             0
           ],
           "dumi.modifyMetaFiles": [
             0,
+            0,
+            0,
+            1,
             0
           ],
           "onGenerateFiles": [
+            0,
+            0,
+            0,
             0,
             0
           ]
@@ -2491,13 +2624,25 @@
             3,
             27,
             0,
-            25
+            25,
+            0,
+            10,
+            1,
+            15,
+            0,
+            13
           ],
           "addEntryCode": [
+            0,
+            0,
+            0,
             0,
             0
           ],
           "addEntryCodeAhead": [
+            0,
+            0,
+            1,
             0,
             0
           ],
@@ -2505,9 +2650,18 @@
             0,
             1,
             0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
             0
           ],
           "addRuntimePluginKey": [
+            0,
+            0,
+            0,
             0,
             0
           ]
@@ -2541,11 +2695,17 @@
           ],
           "addRuntimePlugin": [
             0,
-            0
+            0,
+            0,
+            0,
+            1
           ],
           "onGenerateFiles": [
             2,
-            1
+            1,
+            1,
+            1,
+            2
           ]
         },
         "register": 2
@@ -2577,7 +2737,10 @@
           "onDevCompileDone": [
             273,
             49,
-            41
+            41,
+            30,
+            39,
+            27
           ]
         },
         "register": 0
@@ -2620,13 +2783,25 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
           ],
           "addRuntimePluginKey": [
             0,
+            0,
+            0,
+            0,
             0
           ],
           "onGenerateFiles": [
+            0,
+            1,
+            0,
             0,
             1
           ],
@@ -2635,7 +2810,17 @@
             0,
             1,
             0,
-            0
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            4
           ]
         },
         "register": 1
