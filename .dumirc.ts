@@ -7,6 +7,7 @@ export default defineConfig({
     nav: [
       { title: '指南', link: '/guide/quick-start' },
       { title: '组件', link: '/components' },
+      { title: '发布记录', link: '/changelogs' },
     ],
   },
   resolve: {

@@ -1,3 +1,8 @@
+---
+title: @sun-x/ui 发布记录
+order: 1
+---
+
 # @sun-x/ui
 
 ## 0.1.1

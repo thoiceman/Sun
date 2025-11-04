@@ -3,18 +3,22 @@
 // DO NOT CHANGE IT MANUALLY!
 import { frontmatter as fm0, toc as t0 } from '/Users/thomas/Desktop/Sun/docs/guide/quick-start.md?type=frontmatter';
 import { demoIndex as dmi0 } from '/Users/thomas/Desktop/Sun/docs/guide/quick-start.md?type=demo-index';
-import { frontmatter as fm1, toc as t1 } from '/Users/thomas/Desktop/Sun/docs/components/index.md?type=frontmatter';
-import { demoIndex as dmi1 } from '/Users/thomas/Desktop/Sun/docs/components/index.md?type=demo-index';
-import { frontmatter as fm2, toc as t2 } from '/Users/thomas/Desktop/Sun/docs/guide/releases.md?type=frontmatter';
-import { demoIndex as dmi2 } from '/Users/thomas/Desktop/Sun/docs/guide/releases.md?type=demo-index';
-import { frontmatter as fm3, toc as t3 } from '/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=frontmatter';
-import { demoIndex as dmi3 } from '/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=demo-index';
-import { frontmatter as fm4, toc as t4 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=frontmatter';
-import { demoIndex as dmi4 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=demo-index';
-import { frontmatter as fm5, toc as t5 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=frontmatter';
-import { demoIndex as dmi5 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=demo-index';
-import { frontmatter as fm6, toc as t6 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=frontmatter';
-import { demoIndex as dmi6 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=demo-index';
+import { frontmatter as fm1, toc as t1 } from '/Users/thomas/Desktop/Sun/docs/changelogs/index.md?type=frontmatter';
+import { demoIndex as dmi1 } from '/Users/thomas/Desktop/Sun/docs/changelogs/index.md?type=demo-index';
+import { frontmatter as fm2, toc as t2 } from '/Users/thomas/Desktop/Sun/docs/components/index.md?type=frontmatter';
+import { demoIndex as dmi2 } from '/Users/thomas/Desktop/Sun/docs/components/index.md?type=demo-index';
+import { frontmatter as fm3, toc as t3 } from '/Users/thomas/Desktop/Sun/docs/guide/releases.md?type=frontmatter';
+import { demoIndex as dmi3 } from '/Users/thomas/Desktop/Sun/docs/guide/releases.md?type=demo-index';
+import { frontmatter as fm4, toc as t4 } from '/Users/thomas/Desktop/Sun/docs/changelogs/ui.md?type=frontmatter';
+import { demoIndex as dmi4 } from '/Users/thomas/Desktop/Sun/docs/changelogs/ui.md?type=demo-index';
+import { frontmatter as fm5, toc as t5 } from '/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=frontmatter';
+import { demoIndex as dmi5 } from '/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=demo-index';
+import { frontmatter as fm6, toc as t6 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=frontmatter';
+import { demoIndex as dmi6 } from '/Users/thomas/Desktop/Sun/docs/index.md?type=demo-index';
+import { frontmatter as fm7, toc as t7 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=frontmatter';
+import { demoIndex as dmi7 } from '/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=demo-index';
+import { frontmatter as fm8, toc as t8 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=frontmatter';
+import { demoIndex as dmi8 } from '/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=demo-index';
 
 export const filesMeta = {
   'docs/guide/quick-start': {
@@ -23,40 +27,52 @@ export const filesMeta = {
     demoIndex: dmi0,
     textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/guide/quick-start.md?type=text'),
   },
-  'docs/components/index': {
+  'docs/changelogs/index': {
     frontmatter: fm1,
     toc: t1,
     demoIndex: dmi1,
-    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/components/index.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/changelogs/index.md?type=text'),
   },
-  'docs/guide/releases': {
+  'docs/components/index': {
     frontmatter: fm2,
     toc: t2,
     demoIndex: dmi2,
-    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/guide/releases.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/components/index.md?type=text'),
   },
-  'docs/guide/dev': {
+  'docs/guide/releases': {
     frontmatter: fm3,
     toc: t3,
     demoIndex: dmi3,
-    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/guide/releases.md?type=text'),
   },
-  'docs/index': {
+  'docs/changelogs/ui': {
     frontmatter: fm4,
     toc: t4,
     demoIndex: dmi4,
-    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/index.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/changelogs/ui.md?type=text'),
   },
-  'components/Button/index': {
+  'docs/guide/dev': {
     frontmatter: fm5,
     toc: t5,
     demoIndex: dmi5,
-    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=text'),
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/guide/dev.md?type=text'),
   },
-  'components/IconStar/index': {
+  'docs/index': {
     frontmatter: fm6,
     toc: t6,
     demoIndex: dmi6,
+    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/thomas/Desktop/Sun/docs/index.md?type=text'),
+  },
+  'components/Button/index': {
+    frontmatter: fm7,
+    toc: t7,
+    demoIndex: dmi7,
+    textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/ui/src/Button/index.md?type=text'),
+  },
+  'components/IconStar/index': {
+    frontmatter: fm8,
+    toc: t8,
+    demoIndex: dmi8,
     textGetter: () => import(/* webpackChunkName: "meta__packages" */'/Users/thomas/Desktop/Sun/packages/icons/src/IconStar/index.md?type=text'),
   },
 }
