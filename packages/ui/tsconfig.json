@@ -3,7 +3,12 @@
   "compilerOptions": {
     "rootDir": "src",
     "declarationDir": "dist/types",
-    "types": ["vitest", "@testing-library/jest-dom"]
+    "types": ["vitest", "@testing-library/jest-dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@sun-x/ui": ["src/index.ts"],
+      "@sun-x/ui/*": ["src/*"]
+    }
   },
   "include": ["src/**/*"]
 }

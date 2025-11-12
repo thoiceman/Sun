@@ -5,3 +5,6 @@ dist/
 coverage/
 .DS_Store
 .env*
+ 
+# dumi runtime cache for UI package
+packages/ui/.dumi/
